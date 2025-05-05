@@ -55,3 +55,26 @@ body {
     font-size: 14px;
   }
   
+@media (max-width: 768px) {
+  header {
+    padding: 30px 10px;
+  }
+
+  .hero-header h1 {
+    font-size: 28px;
+  }
+
+  .hero-header p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
