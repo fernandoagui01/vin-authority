@@ -8,13 +8,14 @@ body {
   }
 
   .hero-header {
-    background-image: url('images/F40image.png'); /* Make sure this path matches */
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    height: 540px;
-    width: 100%;
-  }  
+  position: relative;  /* add this so child absolute elements anchor here */
+  background-image: url('images/F40image.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 540px;
+  width: 100%;
+  } 
 
   .hero-header h1 {
     font-size: 30px;
@@ -29,13 +30,15 @@ body {
   }
   
   .cta-button {
-    display: inline-block;
-    background-color: #007BFF;
-    color: #fff;
-    padding: 12px 24px;
-    margin-top: 22%;
-    text-decoration: none;
-    border-radius: 5px;
+  position: absolute;          /* take it out of normal flow */
+  left: 50%;                   /* center horizontally */
+  transform: translateX(-50%); /* actually center it */
+  top: 95%;                    /* 50% down the hero */
+  background-color: #007BFF;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
   }
   
   section {
@@ -78,3 +81,4 @@ body {
     padding: 20px;
   }
 }
+
